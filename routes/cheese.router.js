@@ -25,6 +25,7 @@ router.get('/cheeses', (req, res, next) => {
     'Yorkshire Blue'
   ];
 
-  return JSON.parse(cheeses);
+  return JSON.parse(cheeses)
+    .catch(next);
 
 });
